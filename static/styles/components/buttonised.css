@@ -1,0 +1,5 @@
+@import url("../base/root.css");
+
+.buttonised {
+    background-color: var(--primary-button-color);
+}

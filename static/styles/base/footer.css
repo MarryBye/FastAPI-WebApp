@@ -1,0 +1,5 @@
+@import url("root.css");
+
+footer {
+    background-color: var(--main-bg-dimmed-color);
+}

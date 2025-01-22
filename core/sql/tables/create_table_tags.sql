@@ -1,0 +1,5 @@
+CREATE TABLE "tags" (
+	"id"	INTEGER,
+	"name"	TEXT,
+	PRIMARY KEY("id" AUTOINCREMENT)
+);

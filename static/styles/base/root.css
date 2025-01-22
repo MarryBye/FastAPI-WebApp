@@ -1,0 +1,11 @@
+:root {
+    --main-bg-color: #27252e;
+    --main-bg-dimmed-color: rgb(26, 24, 30);
+    --main-text-color: rgb(237, 237, 237);
+
+    --main-font: "Arial";
+
+    --primary-button-color: #514d60;
+
+    --default-inside-padding: 8px;
+}
