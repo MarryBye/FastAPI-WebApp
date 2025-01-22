@@ -3,7 +3,7 @@
 <html lang="ru">
     <head>
         <meta charset="UTF-8">
-        <title>{{ site_name }}</title>
+        <title>{{ request.state.global_context["SITE_NAME"] }}</title>
         <link rel="stylesheet" href="{{ request.url_for('static', path='styles/style.css') }}">
     </head>
     <body>

@@ -17,7 +17,7 @@ class GamersWeb(FastAPI, metaclass=SingletonMeta):
         
         self.mount(path="/static", app=self.statics, name="static")
         self.mount(path="/templates", app=self.templates, name="templates")
-        
+    
     async def render_template(self, name: str, request: Request, **context):
         return self.templates.TemplateResponse(
             name, context={"request": request, **context}
@@ -25,7 +25,7 @@ class GamersWeb(FastAPI, metaclass=SingletonMeta):
 
     def register_routes(self):
         for route in PAGE_ROUTES:
-            self.add_route(path=route["path"], route=self.handlers[route["endpoint"]], methods=route["methods"])
+            self.add_api_route(route["path"], self.handlers[route["endpoint"]], methods=route["methods"])
     
     def new_handler(self, f):
         print("New handler registering:", f.__name__)

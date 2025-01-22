@@ -1,0 +1,6 @@
+{% extends "index.html" %}
+
+{% block main %}
+    <p>{{ id }}</p>
+    <p>{{ request.url_for('templates', path='aside.html') }}</p>
+{% endblock %}
